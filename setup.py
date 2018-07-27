@@ -8,9 +8,9 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
-    name='pdf-merger',
+    name='pdfmerger',
     version='0.1.0',
-    description='Merge PDFs (inspired by pdfmerge)',
+    description='Merge PDFs (inspired by metaist/pdfmerge)',
     long_description=long_description,
     long_description_content_type='text/markdown',
     url='https://github.com/murrple-1/pdf-merger-python',
