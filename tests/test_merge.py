@@ -1,14 +1,14 @@
 import unittest
 import os
 
-import pdf_merger
+import pdfmerger
 
 
 class TestMerge(unittest.TestCase):
     def test_merge__str(self):
         output_filepath = 'tests/test_files/test_merge__str.pdf'
         input_filepaths = [os.path.join('tests/test_files/', filename) for filename in ['page1.pdf', 'page2.pdf', 'page3-4.pdf']]
-        pdf_merger.merge(input_filepaths, output_filepath)
+        pdfmerger.merge(input_filepaths, output_filepath)
 
         if not os.path.isfile(output_filepath):
             self.fail('{} not created'.format(output_filepath))
@@ -31,7 +31,7 @@ class TestMerge(unittest.TestCase):
         self.assertEqual(output_file_obj.tell(), 0)
 
         try:
-            pdf_merger.merge(input_file_objs, output_file_obj)
+            pdfmerger.merge(input_file_objs, output_file_obj)
 
             for file_obj in input_file_objs:
                 self.assertNotEqual(file_obj.tell(), 0)
