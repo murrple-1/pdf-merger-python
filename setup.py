@@ -9,7 +9,7 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name='pdfmerger',
-    version='0.1.0',
+    version='0.1.1',
     description='Merge PDFs (inspired by metaist/pdfmerge)',
     long_description=long_description,
     long_description_content_type='text/markdown',
@@ -32,4 +32,5 @@ setup(
     ],
     keywords='pdf merge combine',
     packages=find_packages(exclude=['tests']),
+    install_requires=['PyPDF2'],
 )
