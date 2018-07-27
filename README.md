@@ -1,1 +1,1 @@
-# python-pdf-merger
+# pdf-merger-python
