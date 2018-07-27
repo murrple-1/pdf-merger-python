@@ -1,13 +1,14 @@
 from PyPDF2 import PdfFileMerger
 
 
-def merge(paths, output):
+def merge(input_file_objs, output_file_obj):
     merger = PdfFileMerger()
-    for path in paths:
-        merger.append(path)
+    for file_obj in input_file_objs:
+        merger.append(file_obj)
 
-    with open(output, 'wb') as f:
-        merger.write(f)
+    merger.write(output_file_obj)
+
+    merger.close()
 
 
 __all__ = [
