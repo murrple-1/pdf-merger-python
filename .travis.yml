@@ -10,6 +10,6 @@ before_install:
 install:
   - pipenv install --dev
 script:
-  - coverage run --source=pdf_merger -m unittest discover tests
+  - coverage run --source=pdfmerger -m unittest discover tests
 after_script:
   - coveralls
