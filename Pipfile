@@ -4,9 +4,9 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-"pypdf2" = "*"
+"pypdf2" = "==1.26.0"
 
 [dev-packages]
-coveralls = "*"
+coveralls = "==1.5.1"
 
 [requires]
