@@ -1,4 +1,4 @@
-from PyPDF2 import PdfFileReader, PdfFileMerger
+from PyPDF2 import PdfFileMerger
 
 
 def merge(input_file_objs, output_file_obj, _pypdf2_import_bookmarks=False):
