@@ -7,7 +7,8 @@ import pdfmerger
 class TestMerge(unittest.TestCase):
     def test_merge__str(self):
         output_filepath = 'tests/test_files/test_merge__str.pdf'
-        input_filepaths = [os.path.join('tests/test_files/', filename) for filename in ['page1.pdf', 'page2.pdf', 'page3-4.pdf']]
+        input_filepaths = [os.path.join('tests/test_files/', filename)
+                           for filename in ['page1.pdf', 'page2.pdf', 'page3-4.pdf']]
         pdfmerger.merge(input_filepaths, output_filepath)
 
         if not os.path.isfile(output_filepath):
@@ -17,7 +18,8 @@ class TestMerge(unittest.TestCase):
 
     def test_merge__file_obj(self):
         output_filepath = 'tests/test_files/test_merge__file_obj.pdf'
-        input_filepaths = [os.path.join('tests/test_files/', filename) for filename in ['page1.pdf', 'page2.pdf', 'page3-4.pdf']]
+        input_filepaths = [os.path.join('tests/test_files/', filename)
+                           for filename in ['page1.pdf', 'page2.pdf', 'page3-4.pdf']]
 
         input_file_objs = []
         for filepath in input_filepaths:
