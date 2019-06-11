@@ -9,7 +9,7 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name='pdfmerger',
-    version='0.4.0',
+    version='0.5.0',
     description='Merge PDFs (inspired by metaist/pdfmerge)',
     long_description=long_description,
     long_description_content_type='text/markdown',
@@ -26,7 +26,6 @@ setup(
 
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
     ],
